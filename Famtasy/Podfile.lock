@@ -1,0 +1,10 @@
+PODS:
+  - KGFloatingDrawer (0.2.0)
+
+DEPENDENCIES:
+  - KGFloatingDrawer (~> 0.2.0)
+
+SPEC CHECKSUMS:
+  KGFloatingDrawer: b0c2810954bfb61f4d4dd01b8891d5c23933e368
+
+COCOAPODS: 0.39.0

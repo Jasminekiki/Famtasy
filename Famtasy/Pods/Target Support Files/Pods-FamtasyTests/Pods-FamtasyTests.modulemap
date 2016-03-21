@@ -1,0 +1,6 @@
+framework module Pods_FamtasyTests {
+  umbrella header "Pods-FamtasyTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
