@@ -35,6 +35,7 @@
 		669D3F121CA1701E00EA5F88 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669D3F111CA1701E00EA5F88 /* ChatViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		669D3F141CA1722C00EA5F88 /* MessageBubbleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669D3F131CA1722C00EA5F88 /* MessageBubbleTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 		669D3F161CA172BE00EA5F88 /* MessageSentDateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669D3F151CA172BE00EA5F88 /* MessageSentDateTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		66FD990E1CA19AEF006E074C /* UserListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FD990D1CA19AEF006E074C /* UserListCell.swift */; settings = {ASSET_TAGS = (); }; };
 		9A62C52C15C9F288BB1DAA65 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 168010B6703D64F609199AD1 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -92,6 +93,7 @@
 		669D3F111CA1701E00EA5F88 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		669D3F131CA1722C00EA5F88 /* MessageBubbleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageBubbleTableViewCell.swift; sourceTree = "<group>"; };
 		669D3F151CA172BE00EA5F88 /* MessageSentDateTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageSentDateTableViewCell.swift; sourceTree = "<group>"; };
+		66FD990D1CA19AEF006E074C /* UserListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserListCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,7 +147,6 @@
 				663199A31CA00C22006BEB7F /* SearchUserViewController.swift */,
 				663199A41CA00C22006BEB7F /* textCell.swift */,
 				663199A51CA00C22006BEB7F /* textCell.xib */,
-				663199A61CA00C22006BEB7F /* UserListViewController.swift */,
 			);
 			path = Famtasy;
 			sourceTree = "<group>";
@@ -193,10 +194,12 @@
 		66705BFD1CA166FF00431214 /* Chat */ = {
 			isa = PBXGroup;
 			children = (
+				663199A61CA00C22006BEB7F /* UserListViewController.swift */,
 				66705BFB1CA166F000431214 /* Message.swift */,
 				669D3F111CA1701E00EA5F88 /* ChatViewController.swift */,
 				669D3F131CA1722C00EA5F88 /* MessageBubbleTableViewCell.swift */,
 				669D3F151CA172BE00EA5F88 /* MessageSentDateTableViewCell.swift */,
+				66FD990D1CA19AEF006E074C /* UserListCell.swift */,
 			);
 			name = Chat;
 			sourceTree = "<group>";
@@ -419,6 +422,7 @@
 				663199BB1CA00C22006BEB7F /* textCell.swift in Sources */,
 				669D3F161CA172BE00EA5F88 /* MessageSentDateTableViewCell.swift in Sources */,
 				663199BD1CA00C22006BEB7F /* UserListViewController.swift in Sources */,
+				66FD990E1CA19AEF006E074C /* UserListCell.swift in Sources */,
 				663199B71CA00C22006BEB7F /* personalMainViewController.swift in Sources */,
 				663199B61CA00C22006BEB7F /* LoginFormViewController.swift in Sources */,
 				663199AE1CA00C22006BEB7F /* familyZoneViewController.swift in Sources */,
