@@ -31,6 +31,10 @@
 		663199BD1CA00C22006BEB7F /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663199A61CA00C22006BEB7F /* UserListViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		66397ED71CA0098C0096D03D /* FamtasyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66397ED61CA0098C0096D03D /* FamtasyTests.swift */; };
 		66397EE21CA0098C0096D03D /* FamtasyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66397EE11CA0098C0096D03D /* FamtasyUITests.swift */; };
+		66705BFC1CA166F000431214 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66705BFB1CA166F000431214 /* Message.swift */; settings = {ASSET_TAGS = (); }; };
+		669D3F121CA1701E00EA5F88 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669D3F111CA1701E00EA5F88 /* ChatViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		669D3F141CA1722C00EA5F88 /* MessageBubbleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669D3F131CA1722C00EA5F88 /* MessageBubbleTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		669D3F161CA172BE00EA5F88 /* MessageSentDateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669D3F151CA172BE00EA5F88 /* MessageSentDateTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 		9A62C52C15C9F288BB1DAA65 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 168010B6703D64F609199AD1 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -84,6 +88,10 @@
 		66397EDD1CA0098C0096D03D /* FamtasyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FamtasyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		66397EE11CA0098C0096D03D /* FamtasyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamtasyUITests.swift; sourceTree = "<group>"; };
 		66397EE31CA0098C0096D03D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66705BFB1CA166F000431214 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		669D3F111CA1701E00EA5F88 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		669D3F131CA1722C00EA5F88 /* MessageBubbleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageBubbleTableViewCell.swift; sourceTree = "<group>"; };
+		669D3F151CA172BE00EA5F88 /* MessageSentDateTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageSentDateTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +123,7 @@
 		6631998E1CA00C22006BEB7F /* Famtasy */ = {
 			isa = PBXGroup;
 			children = (
+				66705BFD1CA166FF00431214 /* Chat */,
 				6631998F1CA00C22006BEB7F /* AppDelegate.swift */,
 				663199921CA00C22006BEB7F /* CreateFamilyViewController.swift */,
 				663199931CA00C22006BEB7F /* Drawers.storyboard */,
@@ -179,6 +188,17 @@
 				66397EE31CA0098C0096D03D /* Info.plist */,
 			);
 			path = FamtasyUITests;
+			sourceTree = "<group>";
+		};
+		66705BFD1CA166FF00431214 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				66705BFB1CA166F000431214 /* Message.swift */,
+				669D3F111CA1701E00EA5F88 /* ChatViewController.swift */,
+				669D3F131CA1722C00EA5F88 /* MessageBubbleTableViewCell.swift */,
+				669D3F151CA172BE00EA5F88 /* MessageSentDateTableViewCell.swift */,
+			);
+			name = Chat;
 			sourceTree = "<group>";
 		};
 		AC4A2C6ECD23E1D5C127A3E6 /* Frameworks */ = {
@@ -383,17 +403,21 @@
 			files = (
 				663199B91CA00C22006BEB7F /* ScheduleTableViewController.swift in Sources */,
 				663199B21CA00C22006BEB7F /* KGDrawerSettingsViewController.swift in Sources */,
+				669D3F141CA1722C00EA5F88 /* MessageBubbleTableViewCell.swift in Sources */,
 				663199AD1CA00C22006BEB7F /* FamilyListViewController.swift in Sources */,
 				663199B41CA00C22006BEB7F /* LeaveMessageViewController.swift in Sources */,
 				663199A91CA00C22006BEB7F /* CreateFamilyViewController.swift in Sources */,
 				663199BA1CA00C22006BEB7F /* SearchUserViewController.swift in Sources */,
 				663199AB1CA00C22006BEB7F /* eventCell.swift in Sources */,
+				66705BFC1CA166F000431214 /* Message.swift in Sources */,
 				663199B51CA00C22006BEB7F /* LeftDrawerTableViewController.swift in Sources */,
 				663199AF1CA00C22006BEB7F /* famtasyMainViewController.swift in Sources */,
 				663199B81CA00C22006BEB7F /* RegisterFormViewController.swift in Sources */,
+				669D3F121CA1701E00EA5F88 /* ChatViewController.swift in Sources */,
 				663199B31CA00C22006BEB7F /* KGDrawerWebViewViewController.swift in Sources */,
 				663199A71CA00C22006BEB7F /* AppDelegate.swift in Sources */,
 				663199BB1CA00C22006BEB7F /* textCell.swift in Sources */,
+				669D3F161CA172BE00EA5F88 /* MessageSentDateTableViewCell.swift in Sources */,
 				663199BD1CA00C22006BEB7F /* UserListViewController.swift in Sources */,
 				663199B71CA00C22006BEB7F /* personalMainViewController.swift in Sources */,
 				663199B61CA00C22006BEB7F /* LoginFormViewController.swift in Sources */,
@@ -521,6 +545,10 @@
 			baseConfigurationReference = 52300C2A16545490553C6F40 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Famtasy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.tac.Famtasy;
@@ -533,6 +561,10 @@
 			baseConfigurationReference = 5F1A88BDE7F4974E25E0E5D9 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Famtasy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.tac.Famtasy;

@@ -37,6 +37,8 @@ class LeftDrawerTableViewController: UITableViewController {
         }
         else if indexPath.row == 4 {
             appDelegate.centerViewController = appDelegate.familyListViewController()
+        
+
         }
         else if indexPath.row == 5 {
             appDelegate.centerViewController = appDelegate.leaveMessageViewController()

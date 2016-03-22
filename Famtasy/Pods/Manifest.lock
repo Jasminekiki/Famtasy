@@ -1,10 +1,13 @@
 PODS:
   - KGFloatingDrawer (0.2.0)
+  - SnapKit (0.15.0)
 
 DEPENDENCIES:
   - KGFloatingDrawer (~> 0.2.0)
+  - SnapKit (~> 0.15.0)
 
 SPEC CHECKSUMS:
   KGFloatingDrawer: b0c2810954bfb61f4d4dd01b8891d5c23933e368
+  SnapKit: 4962eed2ee18e48cbd2b2292fffc57efe7235f87
 
 COCOAPODS: 0.39.0
