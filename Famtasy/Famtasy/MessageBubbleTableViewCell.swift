@@ -105,12 +105,14 @@ let bubbleImage = bubbleImageMake()
 
 func bubbleImageMake() -> (incoming: UIImage, incomingHighlighed: UIImage, outgoing: UIImage, outgoingHighlighed: UIImage) {
     let maskOutgoing = UIImage(named: "MessageBubble")!
+    
     let maskIncoming = UIImage(CGImage: maskOutgoing.CGImage!, scale: 2, orientation: .UpMirrored)
     
     let capInsetsIncoming = UIEdgeInsets(top: 17, left: 26.5, bottom: 17.5, right: 21)
     let capInsetsOutgoing = UIEdgeInsets(top: 17, left: 21, bottom: 17.5, right: 26.5)
     
-    let incoming = coloredImage(maskIncoming, red: 229/255, green: 229/255, blue: 234/255, alpha: 1).resizableImageWithCapInsets(capInsetsIncoming)
+    let incoming = coloredImage(maskIncoming, red: 229/255, green: 229/255, blue: 234/255, alpha: 1).resizableImageWithCapInsets(capInsetsIncoming);
+    //let incoming = coloredImage(maskIncoming, red: 229/255, green: 229/255, blue: 234/255, alpha: 1)
     let incomingHighlighted = coloredImage(maskIncoming, red: 206/255, green: 206/255, blue: 210/255, alpha: 1).resizableImageWithCapInsets(capInsetsIncoming)
     let outgoing = coloredImage(maskOutgoing,  red: 113/255 ,green: 182/255,blue: 171/255,alpha: 1.0).resizableImageWithCapInsets(capInsetsOutgoing)
     let outgoingHighlighted = coloredImage(maskOutgoing, red: 72/255, green: 152/255, blue: 136/255, alpha: 1).resizableImageWithCapInsets(capInsetsOutgoing)
@@ -124,7 +126,7 @@ func coloredImage(image: UIImage, red: CGFloat, green: CGFloat, blue: CGFloat, a
     let context = UIGraphicsGetCurrentContext()
     image.drawInRect(rect)
     CGContextSetRGBFillColor(context, red, green, blue, alpha)
-    //CGContextSetBlendMode(context, kCGBlendModeSourceAtop);
+    CGContextSetBlendMode(context, CGBlendMode.SourceAtop);
     CGContextFillRect(context, rect)
     let result = UIGraphicsGetImageFromCurrentImageContext()
     UIGraphicsEndImageContext()

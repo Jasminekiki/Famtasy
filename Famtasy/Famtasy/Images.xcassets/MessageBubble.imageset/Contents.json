@@ -2,8 +2,8 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "MessageBubble.png",
-      "scale" : "1x"
+      "filename" : "MessageBubble@2x.png",
+      "scale" : "2x"
     }
   ],
   "info" : {
