@@ -7,28 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		663199A71CA00C22006BEB7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6631998F1CA00C22006BEB7F /* AppDelegate.swift */; settings = {ASSET_TAGS = (); }; };
-		663199A91CA00C22006BEB7F /* CreateFamilyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663199921CA00C22006BEB7F /* CreateFamilyViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		663199AA1CA00C22006BEB7F /* Drawers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 663199931CA00C22006BEB7F /* Drawers.storyboard */; settings = {ASSET_TAGS = (); }; };
-		663199AB1CA00C22006BEB7F /* eventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663199941CA00C22006BEB7F /* eventCell.swift */; settings = {ASSET_TAGS = (); }; };
-		663199AC1CA00C22006BEB7F /* eventCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 663199951CA00C22006BEB7F /* eventCell.xib */; settings = {ASSET_TAGS = (); }; };
-		663199AD1CA00C22006BEB7F /* FamilyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663199961CA00C22006BEB7F /* FamilyListViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		663199AE1CA00C22006BEB7F /* familyZoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663199971CA00C22006BEB7F /* familyZoneViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		663199AF1CA00C22006BEB7F /* famtasyMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663199981CA00C22006BEB7F /* famtasyMainViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		663199B01CA00C22006BEB7F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 663199991CA00C22006BEB7F /* Images.xcassets */; settings = {ASSET_TAGS = (); }; };
-		663199B11CA00C22006BEB7F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6631999A1CA00C22006BEB7F /* Info.plist */; settings = {ASSET_TAGS = (); }; };
-		663199B21CA00C22006BEB7F /* KGDrawerSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6631999B1CA00C22006BEB7F /* KGDrawerSettingsViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		663199B31CA00C22006BEB7F /* KGDrawerWebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6631999C1CA00C22006BEB7F /* KGDrawerWebViewViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		663199B41CA00C22006BEB7F /* LeaveMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6631999D1CA00C22006BEB7F /* LeaveMessageViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		663199B51CA00C22006BEB7F /* LeftDrawerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6631999E1CA00C22006BEB7F /* LeftDrawerTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		663199B61CA00C22006BEB7F /* LoginFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6631999F1CA00C22006BEB7F /* LoginFormViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		663199B71CA00C22006BEB7F /* personalMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663199A01CA00C22006BEB7F /* personalMainViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		663199B81CA00C22006BEB7F /* RegisterFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663199A11CA00C22006BEB7F /* RegisterFormViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		663199B91CA00C22006BEB7F /* ScheduleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663199A21CA00C22006BEB7F /* ScheduleTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		663199BA1CA00C22006BEB7F /* SearchUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663199A31CA00C22006BEB7F /* SearchUserViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		663199BB1CA00C22006BEB7F /* textCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663199A41CA00C22006BEB7F /* textCell.swift */; settings = {ASSET_TAGS = (); }; };
-		663199BC1CA00C22006BEB7F /* textCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 663199A51CA00C22006BEB7F /* textCell.xib */; settings = {ASSET_TAGS = (); }; };
-		663199BD1CA00C22006BEB7F /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663199A61CA00C22006BEB7F /* UserListViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		239C1C931CA264190027EC0C /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239C1C921CA264190027EC0C /* UploadViewController.swift */; };
+		239C1C951CA279790027EC0C /* EditSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239C1C941CA279790027EC0C /* EditSchedule.swift */; };
+		663199A71CA00C22006BEB7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6631998F1CA00C22006BEB7F /* AppDelegate.swift */; };
+		663199A91CA00C22006BEB7F /* CreateFamilyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663199921CA00C22006BEB7F /* CreateFamilyViewController.swift */; };
+		663199AA1CA00C22006BEB7F /* Drawers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 663199931CA00C22006BEB7F /* Drawers.storyboard */; };
+		663199AB1CA00C22006BEB7F /* eventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663199941CA00C22006BEB7F /* eventCell.swift */; };
+		663199AC1CA00C22006BEB7F /* eventCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 663199951CA00C22006BEB7F /* eventCell.xib */; };
+		663199AD1CA00C22006BEB7F /* FamilyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663199961CA00C22006BEB7F /* FamilyListViewController.swift */; };
+		663199AE1CA00C22006BEB7F /* familyZoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663199971CA00C22006BEB7F /* familyZoneViewController.swift */; };
+		663199AF1CA00C22006BEB7F /* famtasyMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663199981CA00C22006BEB7F /* famtasyMainViewController.swift */; };
+		663199B01CA00C22006BEB7F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 663199991CA00C22006BEB7F /* Images.xcassets */; };
+		663199B11CA00C22006BEB7F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6631999A1CA00C22006BEB7F /* Info.plist */; };
+		663199B21CA00C22006BEB7F /* KGDrawerSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6631999B1CA00C22006BEB7F /* KGDrawerSettingsViewController.swift */; };
+		663199B31CA00C22006BEB7F /* KGDrawerWebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6631999C1CA00C22006BEB7F /* KGDrawerWebViewViewController.swift */; };
+		663199B41CA00C22006BEB7F /* LeaveMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6631999D1CA00C22006BEB7F /* LeaveMessageViewController.swift */; };
+		663199B51CA00C22006BEB7F /* LeftDrawerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6631999E1CA00C22006BEB7F /* LeftDrawerTableViewController.swift */; };
+		663199B61CA00C22006BEB7F /* LoginFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6631999F1CA00C22006BEB7F /* LoginFormViewController.swift */; };
+		663199B71CA00C22006BEB7F /* personalMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663199A01CA00C22006BEB7F /* personalMainViewController.swift */; };
+		663199B81CA00C22006BEB7F /* RegisterFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663199A11CA00C22006BEB7F /* RegisterFormViewController.swift */; };
+		663199B91CA00C22006BEB7F /* ScheduleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663199A21CA00C22006BEB7F /* ScheduleTableViewController.swift */; };
+		663199BA1CA00C22006BEB7F /* SearchUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663199A31CA00C22006BEB7F /* SearchUserViewController.swift */; };
+		663199BB1CA00C22006BEB7F /* textCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663199A41CA00C22006BEB7F /* textCell.swift */; };
+		663199BC1CA00C22006BEB7F /* textCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 663199A51CA00C22006BEB7F /* textCell.xib */; };
+		663199BD1CA00C22006BEB7F /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663199A61CA00C22006BEB7F /* UserListViewController.swift */; };
 		66397ED71CA0098C0096D03D /* FamtasyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66397ED61CA0098C0096D03D /* FamtasyTests.swift */; };
 		66397EE21CA0098C0096D03D /* FamtasyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66397EE11CA0098C0096D03D /* FamtasyUITests.swift */; };
 		9A62C52C15C9F288BB1DAA65 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 168010B6703D64F609199AD1 /* Pods.framework */; };
@@ -53,6 +55,8 @@
 
 /* Begin PBXFileReference section */
 		168010B6703D64F609199AD1 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		239C1C921CA264190027EC0C /* UploadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
+		239C1C941CA279790027EC0C /* EditSchedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditSchedule.swift; sourceTree = "<group>"; };
 		52300C2A16545490553C6F40 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		5F1A88BDE7F4974E25E0E5D9 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		6631998F1CA00C22006BEB7F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -116,6 +120,8 @@
 			isa = PBXGroup;
 			children = (
 				6631998F1CA00C22006BEB7F /* AppDelegate.swift */,
+				239C1C921CA264190027EC0C /* UploadViewController.swift */,
+				239C1C941CA279790027EC0C /* EditSchedule.swift */,
 				663199921CA00C22006BEB7F /* CreateFamilyViewController.swift */,
 				663199931CA00C22006BEB7F /* Drawers.storyboard */,
 				663199941CA00C22006BEB7F /* eventCell.swift */,
@@ -385,6 +391,7 @@
 				663199B21CA00C22006BEB7F /* KGDrawerSettingsViewController.swift in Sources */,
 				663199AD1CA00C22006BEB7F /* FamilyListViewController.swift in Sources */,
 				663199B41CA00C22006BEB7F /* LeaveMessageViewController.swift in Sources */,
+				239C1C951CA279790027EC0C /* EditSchedule.swift in Sources */,
 				663199A91CA00C22006BEB7F /* CreateFamilyViewController.swift in Sources */,
 				663199BA1CA00C22006BEB7F /* SearchUserViewController.swift in Sources */,
 				663199AB1CA00C22006BEB7F /* eventCell.swift in Sources */,
@@ -394,6 +401,7 @@
 				663199B31CA00C22006BEB7F /* KGDrawerWebViewViewController.swift in Sources */,
 				663199A71CA00C22006BEB7F /* AppDelegate.swift in Sources */,
 				663199BB1CA00C22006BEB7F /* textCell.swift in Sources */,
+				239C1C931CA264190027EC0C /* UploadViewController.swift in Sources */,
 				663199BD1CA00C22006BEB7F /* UserListViewController.swift in Sources */,
 				663199B71CA00C22006BEB7F /* personalMainViewController.swift in Sources */,
 				663199B61CA00C22006BEB7F /* LoginFormViewController.swift in Sources */,
