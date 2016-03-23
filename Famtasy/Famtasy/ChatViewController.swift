@@ -11,6 +11,7 @@ import SnapKit
 
 let messageFontSize: CGFloat = 17
 let toolBarMinHeight: CGFloat = 44
+let textViewMaxHeight: (portrait: CGFloat, landscape: CGFloat) = (portrait: 272, landscape: 90)
 
 class ChatViewController:UITableViewController,UITextViewDelegate {
     var toolBar: UIToolbar!
@@ -91,11 +92,69 @@ class ChatViewController:UITableViewController,UITextViewDelegate {
                 Message(incoming: false, text: "爱你么么哒", sentDate: NSDate(timeIntervalSinceNow: -6*60*60*24 - 100))
             ],
                     ]
+        let notificationCenter = NSNotificationCenter.defaultCenter()
+        notificationCenter.addObserver(self, selector: "keyboardWillShow:", name: UIKeyboardWillShowNotification, object: nil)
+        notificationCenter.addObserver(self, selector: "keyboardDidShow:", name: UIKeyboardDidShowNotification, object: nil)
         
         
         
         // Do any additional setup after loading the view.
     }
+    
+    func keyboardWillShow(notification: NSNotification) {
+        
+        let userInfo = notification.userInfo as NSDictionary!
+        let frameNew = (userInfo[UIKeyboardFrameEndUserInfoKey] as! NSValue).CGRectValue()
+        let insetNewBottom = tableView.convertRect(frameNew, fromView: nil).height
+        let insetOld = tableView.contentInset
+        let insetChange = insetNewBottom - insetOld.bottom
+        let overflow = tableView.contentSize.height - (tableView.frame.height-insetOld.top-insetOld.bottom)
+        print(overflow)
+        
+        
+        let duration = (userInfo[UIKeyboardAnimationDurationUserInfoKey] as! NSNumber).doubleValue
+        let animations: (() -> Void) = {
+            if !(self.tableView.tracking || self.tableView.decelerating) {
+                // 根据键盘位置调整Inset
+                if overflow > 0 {
+                    self.tableView.contentOffset.y += insetChange
+                    if self.tableView.contentOffset.y < -insetOld.top {
+                        self.tableView.contentOffset.y = -insetOld.top
+                    }
+                } else if insetChange > -overflow {
+                    self.tableView.contentOffset.y += insetChange + overflow
+                }
+            }
+        }
+        if duration > 0 {
+            let options = UIViewAnimationOptions(rawValue: UInt((userInfo[UIKeyboardAnimationCurveUserInfoKey] as! NSNumber).integerValue << 16)) // http://stackoverflow.com/a/18873820/242933
+            UIView.animateWithDuration(duration, delay: 0, options: options, animations: animations, completion: nil)
+        } else {
+            animations()
+        }
+    }
+    
+    func keyboardDidShow(notification: NSNotification) {
+        let userInfo = notification.userInfo as NSDictionary!
+        let frameNew = (userInfo[UIKeyboardFrameEndUserInfoKey] as! NSValue).CGRectValue()
+        let insetNewBottom = tableView.convertRect(frameNew, fromView: nil).height
+        
+        //根据键盘高度设置Inset
+        let contentOffsetY = tableView.contentOffset.y
+        tableView.contentInset.bottom = insetNewBottom
+        tableView.scrollIndicatorInsets.bottom = insetNewBottom
+        //根据键盘高度设置Inset
+        if self.tableView.tracking || self.tableView.decelerating {
+            tableView.contentOffset.y = contentOffsetY
+        }
+    }
+    //MARK:textView代理方法
+    func textViewDidChange(textView: UITextView) {
+        updateTextViewHeight()
+        sendButton.enabled = textView.hasText()
+    }
+    //MARK:tableView代理方法
+    
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         
         
@@ -164,7 +223,21 @@ class ChatViewController:UITableViewController,UITextViewDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-    
+    func sendAction(){
+        let message = Message(incoming: false, text: textView.text, sentDate: NSDate())
+        messages.append([message]);
+        let lastSection = tableView.numberOfSections
+        tableView.beginUpdates()
+        tableView.insertSections(NSIndexSet(index: lastSection), withRowAnimation:.Automatic)
+        tableView.insertRowsAtIndexPaths([
+            NSIndexPath(forRow: 0, inSection: lastSection),
+            NSIndexPath(forRow: 1, inSection: lastSection)
+            ], withRowAnimation: .Automatic)
+        tableView.endUpdates()
+        tableViewScrollToBottomAnimated(true)
+        textView.text = nil;
+
+    }
     /*
     // MARK: - Navigation
     
@@ -174,8 +247,31 @@ class ChatViewController:UITableViewController,UITextViewDelegate {
     // Pass the selected object to the new view controller.
     }
     */
-    
+    func tableViewScrollToBottomAnimated(animated: Bool) {
+        
+        let numberOfSections = messages.count
+        let numberOfRows = messages[numberOfSections - 1].count
+        if numberOfRows > 0 {
+            tableView.scrollToRowAtIndexPath(NSIndexPath(forRow:numberOfRows, inSection: numberOfSections - 1), atScrollPosition: .Bottom, animated: animated)
+        }
+    }
+    func updateTextViewHeight() {
+        let oldHeight = textView.frame.height
+        let maxHeight = UIInterfaceOrientationIsPortrait(interfaceOrientation) ? textViewMaxHeight.portrait : textViewMaxHeight.landscape
+        var newHeight = min(textView.sizeThatFits(CGSize(width: textView.frame.width, height: CGFloat.max)).height, maxHeight)
+        #if arch(x86_64) || arch(arm64)
+            newHeight = ceil(newHeight)
+            #else
+            newHeight = CGFloat(ceilf(newHeight.native))
+        #endif
+        if newHeight != oldHeight {
+            toolBar.frame.size.height = newHeight+8*2-0.5
+        }
+    }
+
+
 }
+
 class InputTextView: UITextView {
     
     
