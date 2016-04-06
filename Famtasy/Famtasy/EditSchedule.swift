@@ -17,4 +17,22 @@ class editScheduleViewController: UIViewController {
     
     @IBOutlet weak var LocationTextField: UITextField!
     
+    @IBAction func CloseKeyBoard(sender: AnyObject) {
+        
+        EventTextField.resignFirstResponder()
+        LocationTextField.resignFirstResponder()
+    }
+    
+    @IBAction func DoneCloseKeyBoard(sender: AnyObject) {
+        EventTextField.resignFirstResponder()
+        LocationTextField.resignFirstResponder()
+    }
+    
+    
+    
+    
+    override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        EventTextField.resignFirstResponder()
+        LocationTextField.resignFirstResponder()
+    }
 }

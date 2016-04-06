@@ -19,6 +19,13 @@ class ChatViewController:UITableViewController,UITextViewDelegate {
     var sendButton: UIButton!
     var messages:[[Message]] = [[]]
     
+    
+    
+    @IBAction func toggleLeftDrawer(sender: AnyObject) {
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        appDelegate.toggleLeftDrawer(sender, animated: false)
+    }
+    
     override var inputAccessoryView: UIView! {
         get {
             if toolBar == nil {
@@ -46,6 +53,8 @@ class ChatViewController:UITableViewController,UITextViewDelegate {
                 sendButton.contentEdgeInsets = UIEdgeInsets(top: 6, left: 6, bottom: 6, right: 6)
                 sendButton.addTarget(self, action: "sendAction", forControlEvents: UIControlEvents.TouchUpInside)
                 toolBar.addSubview(sendButton)
+                
+                
                 
                 // Auto Layout allows `sendButton` to change width, e.g., for localization.
                 

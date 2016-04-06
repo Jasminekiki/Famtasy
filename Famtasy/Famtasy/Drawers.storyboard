@@ -2103,7 +2103,36 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7E0-7t-fYo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="744" y="2954"/>
+            <point key="canvasLocation" x="759" y="2954"/>
+        </scene>
+        <!--Chat View-->
+        <scene sceneID="Xgz-KG-3pK">
+            <objects>
+                <viewController id="CHT-4t-yCJ" userLabel="Chat View" customClass="ChatViewController" customModule="Famtasy" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tuT-Ou-29O"/>
+                        <viewControllerLayoutGuide type="bottom" id="zw3-xZ-Z75"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wb5-Z6-idn">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="FamTasy" id="39R-9F-9QL">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="o9h-3E-3BL">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="toggleLeftDrawer:" destination="CHT-4t-yCJ" id="bK0-aA-6HX"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="List" id="dYm-xI-vdJ">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tam-lS-EuK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1465" y="2954"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="GLW-GJ-tfl">
@@ -2126,7 +2155,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fef-YL-uKb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="197" y="2954"/>
+            <point key="canvasLocation" x="144" y="2954"/>
         </scene>
         <!--Family Zone-->
         <scene sceneID="OIA-uW-chh">
@@ -2464,7 +2493,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                                 <connections>
-                                    <action selector="DoneCloseKeyBoard:" destination="3Rb-At-BrW" eventType="editingDidEndOnExit" id="9JF-Bh-C6D"/>
+                                    <action selector="DoneCloseKeyBoard:" destination="3Rb-At-BrW" eventType="editingDidEndOnExit" id="QV3-Z6-H9U"/>
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Location" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2GO-aW-YLp">
@@ -2477,7 +2506,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                                 <connections>
-                                    <action selector="DoneCloseKeyBoard:" destination="3Rb-At-BrW" eventType="editingDidEndOnExit" id="Mod-Q6-Dx6"/>
+                                    <action selector="DoneCloseKeyBoard:" destination="3Rb-At-BrW" eventType="editingDidEndOnExit" id="YGv-wx-W4a"/>
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="End Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wG1-1Q-Kcb">
@@ -2545,14 +2574,14 @@
                             </mask>
                         </variation>
                         <connections>
-                            <action selector="CloseKeyBoard:" destination="3Rb-At-BrW" eventType="touchUpInside" id="sM2-ul-6WO"/>
+                            <action selector="CloseKeyBoard:" destination="3Rb-At-BrW" eventType="touchUpInside" id="KQg-CR-GLb"/>
                         </connections>
                     </view>
                     <navigationItem key="navigationItem" title="FamTasy" id="lHW-MI-WHP">
-                        <barButtonItem key="leftBarButtonItem" image="List" id="zHb-HV-3bR">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="zHb-HV-3bR">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
-                                <action selector="toggleLeftDrawer:" destination="3Rb-At-BrW" id="Aa7-pu-eWS"/>
+                                <segue destination="h5Z-pR-zKk" kind="show" id="DxH-oR-BwB"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="List" id="83s-uu-BqY">
@@ -2560,12 +2589,36 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="FamilyNameTextField" destination="kNs-79-TQF" id="Arf-ub-KJS"/>
+                        <outlet property="EventTextField" destination="kNs-79-TQF" id="mo8-2H-Fe6"/>
+                        <outlet property="LocationTextField" destination="2GO-aW-YLp" id="QT4-vA-lXE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pom-yQ-bwm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1523" y="4495"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="D0z-Sc-BrP">
+            <objects>
+                <navigationController id="rlw-B2-mgS" sceneMemberID="viewController">
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="QYq-or-cwv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.28235294119999998" green="0.59215686270000001" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="CHT-4t-yCJ" kind="relationship" relationship="rootViewController" id="Mlr-OS-4v6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="21M-tn-6zd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2145" y="2954"/>
         </scene>
     </scenes>
     <resources>
@@ -2583,8 +2636,9 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="ckh-ko-kOz"/>
-        <segue reference="XX7-ub-dV3"/>
-        <segue reference="ScB-Ei-E46"/>
+        <segue reference="Us0-gp-0OF"/>
+        <segue reference="dLE-Rs-pOk"/>
         <segue reference="6pa-Yf-8Qt"/>
+        <segue reference="ScB-Ei-E46"/>
     </inferredMetricsTieBreakers>
 </document>

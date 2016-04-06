@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2345445A1CABC3B4008C4A60 /* MessageSentDateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669D3F151CA172BE00EA5F88 /* MessageSentDateTableViewCell.swift */; };
 		239C1C931CA264190027EC0C /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239C1C921CA264190027EC0C /* UploadViewController.swift */; };
 		239C1C951CA279790027EC0C /* EditSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239C1C941CA279790027EC0C /* EditSchedule.swift */; };
 		663199A71CA00C22006BEB7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6631998F1CA00C22006BEB7F /* AppDelegate.swift */; };
@@ -30,14 +31,12 @@
 		663199BA1CA00C22006BEB7F /* SearchUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663199A31CA00C22006BEB7F /* SearchUserViewController.swift */; };
 		663199BB1CA00C22006BEB7F /* textCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663199A41CA00C22006BEB7F /* textCell.swift */; };
 		663199BC1CA00C22006BEB7F /* textCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 663199A51CA00C22006BEB7F /* textCell.xib */; };
-		663199BD1CA00C22006BEB7F /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663199A61CA00C22006BEB7F /* UserListViewController.swift */; };
+		663199BD1CA00C22006BEB7F /* (null) in Sources */ = {isa = PBXBuildFile; };
 		66397ED71CA0098C0096D03D /* FamtasyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66397ED61CA0098C0096D03D /* FamtasyTests.swift */; };
 		66397EE21CA0098C0096D03D /* FamtasyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66397EE11CA0098C0096D03D /* FamtasyUITests.swift */; };
-		66705BFC1CA166F000431214 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66705BFB1CA166F000431214 /* Message.swift */; settings = {ASSET_TAGS = (); }; };
-		669D3F121CA1701E00EA5F88 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669D3F111CA1701E00EA5F88 /* ChatViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		669D3F141CA1722C00EA5F88 /* MessageBubbleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669D3F131CA1722C00EA5F88 /* MessageBubbleTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
-		669D3F161CA172BE00EA5F88 /* MessageSentDateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669D3F151CA172BE00EA5F88 /* MessageSentDateTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
-		66FD990E1CA19AEF006E074C /* UserListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FD990D1CA19AEF006E074C /* UserListCell.swift */; settings = {ASSET_TAGS = (); }; };
+		66705BFC1CA166F000431214 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66705BFB1CA166F000431214 /* Message.swift */; };
+		669D3F121CA1701E00EA5F88 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669D3F111CA1701E00EA5F88 /* ChatViewController.swift */; };
+		669D3F141CA1722C00EA5F88 /* MessageBubbleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669D3F131CA1722C00EA5F88 /* MessageBubbleTableViewCell.swift */; };
 		9A62C52C15C9F288BB1DAA65 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 168010B6703D64F609199AD1 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -411,6 +410,7 @@
 				663199B91CA00C22006BEB7F /* ScheduleTableViewController.swift in Sources */,
 				663199B21CA00C22006BEB7F /* KGDrawerSettingsViewController.swift in Sources */,
 				669D3F141CA1722C00EA5F88 /* MessageBubbleTableViewCell.swift in Sources */,
+				2345445A1CABC3B4008C4A60 /* MessageSentDateTableViewCell.swift in Sources */,
 				663199AD1CA00C22006BEB7F /* FamilyListViewController.swift in Sources */,
 				663199B41CA00C22006BEB7F /* LeaveMessageViewController.swift in Sources */,
 				239C1C951CA279790027EC0C /* EditSchedule.swift in Sources */,
@@ -426,7 +426,7 @@
 				663199A71CA00C22006BEB7F /* AppDelegate.swift in Sources */,
 				663199BB1CA00C22006BEB7F /* textCell.swift in Sources */,
 				239C1C931CA264190027EC0C /* UploadViewController.swift in Sources */,
-				663199BD1CA00C22006BEB7F /* UserListViewController.swift in Sources */,
+				663199BD1CA00C22006BEB7F /* (null) in Sources */,
 				663199B71CA00C22006BEB7F /* personalMainViewController.swift in Sources */,
 				663199B61CA00C22006BEB7F /* LoginFormViewController.swift in Sources */,
 				663199AE1CA00C22006BEB7F /* familyZoneViewController.swift in Sources */,
