@@ -22,5 +22,22 @@ class uploadViewController : UIViewController{
         
     }
     
+    @IBAction func buttnClick(sender: UIButton?){
+        let familyZoneVC = self.storyboard?.instantiateViewControllerWithIdentifier("familyZoneTableStoryboardId") as?familyZoneViewController;
+        let date = NSDate();
+        let dateFormatter = NSDateFormatter();
+        dateFormatter.dateFormat = "yyyy-MM-dd";
+    
+        
+        let timeFormatter = NSDateFormatter();
+        timeFormatter.dateFormat = "HH:mm";
+        let currentDate = dateFormatter.stringFromDate(date);
+        let currentTime = timeFormatter.stringFromDate(date) as String;
+        var content = String();
+        content = UploadTextView.text;
+        familyZoneVC?.textInfo.append((time: currentTime, date: currentDate, owner: "Son", content: content, image1: "No", image2: "No", image3 :"No"));
+        navigationController?.pushViewController(familyZoneVC!, animated: true);
+    }
+    
         
 }
