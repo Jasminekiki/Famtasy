@@ -19,7 +19,7 @@ class ScheduleTableViewController: UITableViewController {
     @IBOutlet var ScheduleView: UITableView!
     var eventInfo = [(day: "2016-2-16", start: "9:00", end: "11:00", event: "Meeting", Location: "Apple Co."), (day: "2016-2-16", start: "11:30", end: "13:30", event: "Lunch & Available", Location: "Apple Co."), (day: "2016-2-16", start: "14:00", end: "17:00", event: "Coding", Location: "Apple Co."), (day: "2016-2-16", start: "17:30", end: "18:30", event: "On the way home", Location: "Shanghai"), (day: "2016-2-16", start: "19:00", end: "23:30", event: "Available", Location: "Home"), (day: "2016-2-17", start: "8:00", end: "11:30", event: "Shopping", Location: "Jing'an District")
     ]
-    var numberOfCell = 6;
+    var numberOfCell = 7;
     override func viewDidLoad() {
         super.viewDidLoad();
         ScheduleView.registerNib(UINib(nibName: "eventCell", bundle: nil), forCellReuseIdentifier: "eventCell")
@@ -27,7 +27,7 @@ class ScheduleTableViewController: UITableViewController {
     
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return numberOfCell;
+        return eventInfo.count;
     }
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return 135;
