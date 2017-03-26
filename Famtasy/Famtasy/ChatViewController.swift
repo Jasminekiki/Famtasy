@@ -15,6 +15,7 @@ let textViewMaxHeight: (portrait: CGFloat, landscape: CGFloat) = (portrait: 272,
 
 class ChatViewController:UITableViewController,UITextViewDelegate {
     var toolBar: UIToolbar!
+    
     var textView: UITextView!
     var sendButton: UIButton!
     var messages:[[Message]] = [[]]
@@ -93,12 +94,12 @@ class ChatViewController:UITableViewController,UITextViewDelegate {
         self.tableView.separatorStyle = .None
         messages = [
             [
-                Message(incoming: true, text: "你叫什么名字？", sentDate: NSDate(timeIntervalSinceNow: -12*60*60*24)),
-                Message(incoming: false, text: "我叫灵灵，聪明又可爱的灵灵", sentDate: NSDate(timeIntervalSinceNow:-12*60*60*24))
+                Message(incoming: true, text: "今天有木有课呀？", sentDate: NSDate(timeIntervalSinceNow: -12*60*60*24)),
+                Message(incoming: false, text: "没有，但是过两天要上创答辩了", sentDate: NSDate(timeIntervalSinceNow:-12*60*60*24))
             ],
             [
-                Message(incoming: true, text: "你爱不爱我？", sentDate: NSDate(timeIntervalSinceNow: -6*60*60*24 - 200)),
-                Message(incoming: false, text: "爱你么么哒", sentDate: NSDate(timeIntervalSinceNow: -6*60*60*24 - 100))
+                Message(incoming: true, text: "那快好好准备吧", sentDate: NSDate(timeIntervalSinceNow: -6*60*60*24 - 200)),
+                Message(incoming: false, text: "好的～", sentDate: NSDate(timeIntervalSinceNow: -6*60*60*24 - 100))
             ],
                     ]
         let notificationCenter = NSNotificationCenter.defaultCenter()

@@ -35,7 +35,7 @@ class uploadViewController : UIViewController{
         let currentTime = timeFormatter.stringFromDate(date) as String;
         var content = String();
         content = UploadTextView.text;
-        familyZoneVC?.textInfo.append((time: currentTime, date: currentDate, owner: "Son", content: content, image1: "No", image2: "No", image3 :"No"));
+        familyZoneVC?.textInfo.append((time: currentTime, date: currentDate, owner: "Pisces", content: content, image1: "No", image2: "No", image3 :"No"));
         navigationController?.pushViewController(familyZoneVC!, animated: true);
     }
     

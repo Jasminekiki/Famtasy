@@ -19,8 +19,15 @@ class familyListViewController: UITableViewController{
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
         
-        let ChatVC:ChatViewController = ChatViewController()
-        ChatVC.title = "Mom"
+        let ChatVC:ChatViewController = ChatViewController();
+        if(indexPath.row == 0){
+            ChatVC.title = "Aries";
+            print(indexPath.row);
+        }else{
+            ChatVC.title = "Simon";
+            print(indexPath.row);
+        }
+        
         
         
         UINavigationBar.appearance().tintColor = UIColor(red:0.94, green:0.24, blue:0.37, alpha:1)
@@ -30,11 +37,14 @@ class familyListViewController: UITableViewController{
         UIApplication.sharedApplication().statusBarStyle = UIStatusBarStyle.LightContent
         
         
-        let navigationVC:UINavigationController = UINavigationController(rootViewController: ChatVC)
+        //let navigationVC:UINavigationController = UINavigationController(rootViewController: ChatVC)
         
-        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         
-        appDelegate.centerViewController = navigationVC;
+        
+        //let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        
+        //appDelegate.centerViewController = navigationVC;
+        navigationController?.pushViewController(ChatVC, animated: true);
         
         
     }
