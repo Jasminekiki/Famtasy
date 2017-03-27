@@ -41,14 +41,17 @@ class LeftDrawerTableViewController: UITableViewController {
 
         }
         else if indexPath.row == 5 {
-            appDelegate.centerViewController = appDelegate.leaveMessageViewController()
-        }
-        else if indexPath.row == 6 {
             appDelegate.centerViewController = appDelegate.familyZoneViewController()
         }
-        else if indexPath.row == 7 {
+        else if indexPath.row == 6 {
             appDelegate.centerViewController = appDelegate.scheduleTableViewController()
         }
+        else if indexPath.row == 7 {
+            appDelegate.centerViewController = appDelegate.drawerSettingsViewController()
+            
+            
+        }
+
         
     }
     

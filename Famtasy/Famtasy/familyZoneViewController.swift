@@ -54,7 +54,7 @@ class familyZoneViewController: UIViewController, UITableViewDataSource, UITable
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("textCell", forIndexPath: indexPath) as!
         textCell
-        cell.setRectangle();
+        //cell.setRectangle();
         cell.setRidues();
         cell.timeLabel.text = textInfo[indexPath.row].time
         cell.dateLabel.text = textInfo[indexPath.row].date

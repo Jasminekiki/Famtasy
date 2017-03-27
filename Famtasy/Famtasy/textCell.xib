@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
@@ -11,7 +11,7 @@
             <rect key="frame" x="0.0" y="0.0" width="494" height="247"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="494" height="246"/>
+                <rect key="frame" x="0.0" y="0.0" width="494" height="246.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="13:40" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EBO-Oe-aMU" userLabel="timeLabel">
@@ -101,22 +101,9 @@
                             </mask>
                         </variation>
                     </imageView>
-                    <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Bu-4Z-t97" userLabel="commentButton">
-                        <rect key="frame" x="387" y="211" width="95" height="25"/>
-                        <color key="backgroundColor" red="0.4392156862745098" green="0.44705882352941179" blue="0.45882352941176469" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="25" id="KBa-Lp-qZ6"/>
-                            <constraint firstAttribute="width" constant="95" id="PCn-R6-W2O"/>
-                        </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                        <state key="normal" title="Comment" image="AlbumComment.png">
-                            <color key="titleColor" red="0.98289535979999998" green="0.98289535979999998" blue="0.98289535979999998" alpha="1" colorSpace="calibratedRGB"/>
-                        </state>
-                    </button>
                 </subviews>
                 <constraints>
                     <constraint firstItem="EBO-Oe-aMU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="58" id="07A-py-zxU"/>
-                    <constraint firstItem="2Bu-4Z-t97" firstAttribute="trailing" secondItem="TxP-7z-moB" secondAttribute="trailing" id="0ql-S7-X5K"/>
                     <constraint firstItem="TxP-7z-moB" firstAttribute="top" secondItem="BuE-gl-flb" secondAttribute="bottom" constant="4" id="1yJ-9s-vfU"/>
                     <constraint firstItem="TxP-7z-moB" firstAttribute="centerY" secondItem="EBO-Oe-aMU" secondAttribute="centerY" id="7IR-Bb-Hpl"/>
                     <constraint firstAttribute="trailingMargin" secondItem="TxP-7z-moB" secondAttribute="trailing" id="9Jn-2T-2VW"/>
@@ -136,18 +123,12 @@
                     <constraint firstItem="hVO-45-CHr" firstAttribute="width" secondItem="ilr-ub-txg" secondAttribute="width" id="aGj-sa-Na6"/>
                     <constraint firstItem="ilr-ub-txg" firstAttribute="leading" secondItem="TxP-7z-moB" secondAttribute="leading" id="aaZ-c2-qlO"/>
                     <constraint firstItem="TxP-7z-moB" firstAttribute="leading" secondItem="EBO-Oe-aMU" secondAttribute="trailing" constant="10" id="bxp-7E-9CX"/>
-                    <constraint firstItem="2Bu-4Z-t97" firstAttribute="top" secondItem="rz6-8L-i4H" secondAttribute="bottom" constant="10" id="c2D-dh-frR"/>
                     <constraint firstItem="Ike-cj-kQj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="czO-Uq-GeE"/>
                     <constraint firstItem="EBO-Oe-aMU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="70" id="gPm-LS-DCK"/>
-                    <constraint firstItem="2Bu-4Z-t97" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="ggC-EU-qee"/>
                     <constraint firstAttribute="trailing" secondItem="BuE-gl-flb" secondAttribute="trailing" constant="10" id="hya-Th-GrB"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="2Bu-4Z-t97" secondAttribute="bottom" constant="8" id="p2Z-aF-R3I"/>
                     <constraint firstAttribute="trailingMargin" secondItem="BuE-gl-flb" secondAttribute="trailing" constant="10" id="qu6-9Q-BMn"/>
-                    <constraint firstItem="2Bu-4Z-t97" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="rXD-M0-DCg"/>
-                    <constraint firstItem="2Bu-4Z-t97" firstAttribute="top" secondItem="TxP-7z-moB" secondAttribute="bottom" constant="10" id="vh7-6M-viU"/>
                     <constraint firstItem="Ike-cj-kQj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="vn2-DX-ZFn"/>
                     <constraint firstItem="rz6-8L-i4H" firstAttribute="width" secondItem="ilr-ub-txg" secondAttribute="width" id="xkV-TR-axn"/>
-                    <constraint firstItem="2Bu-4Z-t97" firstAttribute="top" secondItem="TxP-7z-moB" secondAttribute="bottom" constant="10" id="zzc-Am-Bec"/>
                 </constraints>
                 <variation key="default">
                     <mask key="constraints">
@@ -157,18 +138,11 @@
                         <exclude reference="PO0-04-M0h"/>
                         <exclude reference="hya-Th-GrB"/>
                         <exclude reference="9Jn-2T-2VW"/>
-                        <exclude reference="c2D-dh-frR"/>
-                        <exclude reference="ggC-EU-qee"/>
-                        <exclude reference="rXD-M0-DCg"/>
-                        <exclude reference="vh7-6M-viU"/>
-                        <exclude reference="zzc-Am-Bec"/>
                     </mask>
                 </variation>
             </tableViewCellContentView>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <connections>
-                <outlet property="commentButton" destination="2Bu-4Z-t97" id="NdA-Y4-sQ4"/>
-                <outlet property="commentLayOutWitoutPic" destination="zzc-Am-Bec" id="3MR-3M-bVR"/>
                 <outlet property="contentLabel" destination="TxP-7z-moB" id="JCB-Wu-ovu"/>
                 <outlet property="dateLabel" destination="Ike-cj-kQj" id="x3J-pT-62W"/>
                 <outlet property="image1" destination="ilr-ub-txg" id="iw8-pc-qFX"/>
@@ -180,7 +154,4 @@
             <point key="canvasLocation" x="253" y="185.5"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <image name="AlbumComment.png" width="20" height="20"/>
-    </resources>
 </document>

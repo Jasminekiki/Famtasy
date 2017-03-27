@@ -17,7 +17,7 @@ class textCell: UITableViewCell {
 
     @IBOutlet weak var contentLabel: UILabel!
     
-    @IBOutlet weak var commentButton: UIButton!
+//    @IBOutlet weak var commentButton: UIButton!
     
     @IBOutlet weak var dateLabel: UILabel!
     
@@ -33,29 +33,30 @@ class textCell: UITableViewCell {
     
     override init(style: UITableViewCellStyle, reuseIdentifier: String!) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+        
     }
-    @IBOutlet weak var commentLayOut: NSLayoutConstraint!
+//    @IBOutlet weak var commentLayOut: NSLayoutConstraint!
     
-    @IBOutlet weak var commentLayOutWitoutPic: NSLayoutConstraint!
+//    @IBOutlet weak var commentLayOutWitoutPic: NSLayoutConstraint!
     
     func withoutPicture(imageNumber: Int){
         if(imageNumber == 0){
 //            commentLayOut.active = true;
 //            commentLayOutWitoutPic.active = false;
-            print(commentLayOutWitoutPic.active);
+//            print(commentLayOutWitoutPic.active);
 
         }else if(imageNumber == 1){
             image3.hidden = true;
 //            commentLayOut.active = true;
 //            commentLayOutWitoutPic.active = false;
-            print(commentLayOutWitoutPic.active);
+ //           print(commentLayOutWitoutPic.active);
         }
         else if(imageNumber == 2){
             image2.hidden = true;
             image3.hidden = true;
             //commentLayOut.active = true;
             //commentLayOutWitoutPic.active = false;
-            print(commentLayOutWitoutPic.active);
+ //           print(commentLayOutWitoutPic.active);
         }
         else{
             image1.hidden = true;
@@ -64,7 +65,7 @@ class textCell: UITableViewCell {
             
             //commentLayOut.active = false;
             //commentLayOutWitoutPic.active = true;
-            print(commentLayOutWitoutPic.active);
+//            print(commentLayOutWitoutPic.active);
         }
     }
     
@@ -75,10 +76,10 @@ class textCell: UITableViewCell {
 
     
     //Set the comment button to rounded recktangle
-    func setRectangle(){
-        commentButton.layer.cornerRadius = timeLabel.frame.size.width/5;
-        commentButton.layer.masksToBounds = true;
-    }
+//    func setRectangle(){
+//        commentButton.layer.cornerRadius = timeLabel.frame.size.width/5;
+//        commentButton.layer.masksToBounds = true;
+//    }
 
 
     
